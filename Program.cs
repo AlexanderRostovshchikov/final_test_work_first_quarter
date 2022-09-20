@@ -17,17 +17,17 @@ for (int i = 0; i < array.Length; i++)
     }
     if (array[i].Length <= 3)
     {
-        s = s + array[i] + "|";
+        s = s + array[i] + ",";
     }
 }
 
-if (s.Length > 1 && s[s.Length - 1] == '|')
+if (s.Length > 1 && s[s.Length - 1] == ',')
 {
     sSub = s.Substring(0, s.Length - 1);
 }
 else sSub = s;
 
-string[] sArray = sSub.Split('|');
+string[] sArray = sSub.Split(',');
 Console.Write("[");
 
 for (int i = 0; i < sArray.Length; i++)
