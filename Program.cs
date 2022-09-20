@@ -1,5 +1,5 @@
-﻿//string[] array = { "hello", "2", "world", ":-)" };
-string[] array = { "Russia", "Denmark", "Kazan" };
+﻿string[] array = { "hello", "2", "world", ":-)" };
+//string[] array = { "Russia", "Denmark", "Kazan" };
 
 string s = "";
 string sSub = "";
@@ -32,9 +32,6 @@ Console.Write("[");
 
 for (int i = 0; i < sArray.Length; i++)
 {
-    if(sArray.Length == 1) {
-        break;
-    }
     if (i == sArray.Length - 1)
     {
         Console.Write($"\"{sArray[i]}\"");
